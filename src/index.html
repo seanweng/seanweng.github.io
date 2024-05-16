@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Protfolio</title>
+	<meta name="description" content="Hsiang-Yang Weng's Protfolio">
+	<meta name="keywords" content="Hsiang-Yang Weng, Protfolio">
+	<meta name="author" content="Hsiang-Yang Weng">
+
+	<meta charset="utf-8">npm i bootstrap-icons
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="styles.css">	
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="header" class="fixed-top"> 
+<!-- Navigation Bar -->
+<nav id="protfolio-navbar" class="navbar .navbar-toggler navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+		<a class="navbar-brand" href="#home-anchor">Protfolio</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarScroll">
+			<ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+				<li class="nav-item">
+					<a class="nav-link" aria-current="page" href="#home-anchor">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about-anchor">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#protfolio-anchor">Protfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact-anchor">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+<main id="main">
+	<!-- Home Page -->
+	<div class="home">
+		<div class="container">
+			<a id="home-anchor" class="anchor"></a>
+			<div class="home-content">
+				<h1> Hsiang-Yang Weng </h1>
+				<p> Graduate Software Engineer </p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- About Me -->
+	<section id="about-anchor" class="about">
+		<div class="container">
+			<div class="row justify-content-between">
+				<!-- Profile Picture -->
+				<div class="col-lg-3">
+					<div class="profile-picture-bg">
+						<img src="./asset/img/profile-picture.jpg" alt="profile picture">
+					</div>
+				</div>
+
+				<!-- Self-Introduction -->
+				<div class="col-lg-8">
+					<div class="self-intro">
+						<h1> A motivated and professional software graduate with four years of experience in software development.</h1>
+						<p> I worked in the Database and Software Engineering Lab (DBSE) until 
+							graduated from National Cheng Kung University with a master's degree in Computer and Communication Engineering. 
+							My journey so far has included plenty of training in project management and software engineering. </p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Competency -->
+			<div class="row justify-content-center">
+				<div class="competency-bg">
+					<!-- Swiper -->
+					<div class="swiper competency-Swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="./asset/img/proposal-writing.png" alt="Proposal Writing">
+								</div>
+								<div class="text-wrapper">
+									<h5> Proposal Writing </h5>
+									<p> Four years of experience with proposal writing. Propose three MOST research projects 
+										and win two projects on DBSE Hack Day.</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="./asset/img/project-management.png" alt="Project Management">
+								</div>
+								<div class="text-wrapper">
+									<h5> Project Management </h5>
+									<p> Three years of project management experience.
+										Lead three different teams to reach their goals and release the final products on time and on budget. </p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="./asset/img/backend-development.png" alt="Backend Development">
+								</div>
+								<div class="text-wrapper">
+									<h5> Backend Development </h5>
+									<p> Four years of experience with back-end development. Master in Java, C, C++, Python and SQL. </p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="img-wrapper">
+									<img src="./asset/img/frontend-development.png" alt="Frontend development">
+								</div>
+								<div class="text-wrapper">
+									<h5> Frontend development </h5>
+									<p> Two years of experience with front-end development. Familiar with HTML, CSS, JavaScript and Bootstrap. </p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<!-- Swiper JS -->
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+				<!-- Initialize Swiper -->
+				<script src="index.js"></script>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<!-- Protfolio -->
+	<section class="protfolio">
+		<div class="container">
+			<a id="protfolio-anchor" class="anchor"></a>
+			<div class="section-title">
+				<h2> MY PROTFOLIO </h2>
+			</div> 
+			<div class="row protfolio-content">
+				<!-- Protfolio Cover -->
+				<div class="protfolio-item col-xl-4 col-lg-6">
+					<div class="card" style="background-image: url('./asset/img/competition-cover-bg.jpg');">
+						<a href="./projects/se4pp.html" target="_blank" class="stretched-link"></a>
+						<div class="card-content">
+							<h5 class="card-title"> AI Strategy Competition Platform </h5>
+							<p class="card-body"> The AI Strategy Competition Platform is an online competition platform for board games. 
+								Students can construct their AI strategy using C or Java to compete with each other on the platform. 
+								A ranking system is also provided by the platform to motivate the students to improve their AI strategies. 
+								With motivation to achieve higher rankings, 
+								students can practice programming skills while improving their artificial intelligence strategies. </p>
+						</div>
+					</div>
+				</div>
+				<div class="protfolio-item col-xl-4 col-lg-6">
+					<div class="card" style="background-image: url('./asset/img/apiInfra-cover-bg.jpg');">
+						<a href="./projects/apiinfra.html" target="_blank" class="stretched-link"></a>
+						<div class="card-content">
+							<h5 class="card-title"> API Research Infrastructure </h5>
+							<p class="card-body"> The API Research Infrastructure is an infrastructure software that 
+								provides an interface for API researchers to observe and analyze API usage data. 
+								The infrastructure software is launched in 2020 and accumulates over a million of API usage data.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="protfolio-item col-xl-4 col-lg-6">
+					<div class="card" style="background-image: url('./asset/img/plt-cover-bg.jpg');">
+						<a href="./projects/plt.html" target="_blank" class="stretched-link"></a>
+						<div class="card-content">
+							<h5 class="card-title"> Play and Learn Together </h5>
+							<p class="card-body"> Play and Learn Together is a web application that 'gamifies' the process of programming learning. 
+								It is launched in 2020 and serve as the learning website for the Introduction to Computers Course at 
+								National Cheng Kung University. It is one of my winning projects in DBSE Hack Day.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section class="contact">
+		<div class="container">
+			<a id="contact-anchor" class="anchor"></a>
+			<div class="section-title">
+				<h2> Contact </h2>
+			</div> 
+			<div class="row justify-content: space-between">
+				<div class="contact-img col-lg-6">
+					<img src="./asset/img/contact.jpg" alt="contact img">
+				</div>
+				<div class="contact-content col-lg-6">
+					<ul class="contact-info">
+						<li>
+							<span> 
+								4F., No.27, Ln. 437, Yongzhen Rd.
+							</span>
+						</li>
+						<li>
+							<span> 
+								Yonghe Dist., New Taipei City
+							</span>
+						</li>
+						<li>
+							<span> 
+								Taiwan (R.O.C.) 
+							</span>
+						</li>
+						<li>
+							<span> 
+								+886 988054167
+							</span>
+						</li>
+						<li>
+							<span> 
+								seanweng@gmail.com
+							</span>
+						</li>
+					</ul>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+</main>
+<!-- Footer -->
+<div class="footer">
+	<p>Create by Hsiang-Yang Weng, 2024</p>
+	<p><a href="mailto:seanweng@gmail.com">seanweng@gmail.com</a></p>
+</div>
+</body>
+
+
+</html>
+
